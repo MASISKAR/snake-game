@@ -1,0 +1,251 @@
+/*Created by Sirius MK (Masis Karaetyan) on 18.06.2017.*/
+/*Finished on 23.06.2017.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(136, 191, 232, 0.15);
+    font-family: "Arial", sans-serif;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+
+}
+
+#mainWindow {
+    width: 724px;
+    height: 524px;
+    border: 2px solid #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#panel {
+    height: 100%;
+    width: 200px;
+    float: left;
+    background: #C6CAC6;
+}
+
+#panel p {
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 8px;
+    color: #033004;
+    display: inline-block;
+}
+
+#panel p:nth-child(3) {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 2px;
+
+}
+
+#panel p:nth-child(2) {
+    padding-top: 7px;
+    margin-left: 6px;
+}
+
+#panel div:first-child {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 35px;
+    background: url(images/nx3r7d.gif) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.button, .writeText {
+    height: 30px;
+    width: 90px;
+    border: 3px solid #A3A3A3;
+    margin: 9px auto;
+    font-weight: 700;
+    font-size: 17px;
+    color: #A3A3A3;
+    background: #333333;
+    line-height: 29px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.button:active {
+    background: #292727;
+    border-color: #7F7F7F;
+    color: #C5BABA;
+}
+
+#changeSpeed {
+    margin-top: 15px;
+}
+
+.headerText {
+    color: #333333;
+    font-weight: 700;
+}
+
+#currentSpeed {
+    width: 60px;
+    display: inline-block;
+
+}
+
+#currentSpeed:hover {
+    cursor: default;
+}
+
+#minus, #plus {
+    width: 30px;
+    display: inline-block;
+
+}
+
+.button:hover, #continue:hover {
+    cursor: pointer;
+    background: #292727;
+    border-color: #7F7F7F;
+    color: #C5BABA;
+}
+
+.writeText {
+    background: #A3A3A3;
+    border-color: #333333;
+    color: #333333;
+    width: 138px;
+}
+
+#upKey, #rightKey, #leftKey, #downKey {
+    width: 30px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#upKey {
+    display: block;
+    margin-bottom: 0;
+}
+
+#gameZone {
+    border-left: 2px solid #333333;
+    height: 100%;
+    width: 522px;
+    float: right;
+    background: radial-gradient(#DDDDDD, #878484);
+
+}
+
+#play {
+    width: 250px;
+    height: 80px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-size: 50px;
+    line-height: 78px;
+    position: absolute;
+    top: 200px;
+    left: 335px;
+    display: block;
+
+}
+
+#Countdown {
+    width: 400px;
+    height: 250px;
+    font-size: 220px;
+    position: absolute;
+    top: 136px;
+    left: 250px;
+    display: none;
+    color: #333333;
+
+}
+
+.line {
+    clear: both;
+
+}
+
+#gameZone .line div {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(212, 198, 198);
+    border-radius: 4px;
+    margin: 1px;
+    float: left;
+
+}
+
+@keyframes foodAnimation {
+    from {
+        background: #333333;
+    }
+    to {
+        background: #6E6D6D;
+    }
+}
+
+.animated {
+    animation-name: foodAnimation;
+    animation-timing-function: linear;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+#pause_win_gameover {
+    display: none;
+    width: 522px;
+    height: 522px;
+    background: rgba(138, 135, 135, 0.5);
+    position: absolute;
+}
+
+#paused {
+    font-size: 80px;
+    margin-top: 125px;
+    color: #333333;
+}
+
+#continue {
+    width: 250px;
+    height: 80px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-size: 40px;
+    border: 3px solid #A3A3A3;
+    font-weight: 700;
+    color: #A3A3A3;
+    background: #333333;
+    line-height: 78px;
+    margin-top: 20px;
+    margin-left: 123px;
+}
+
+#continue:active {
+    background: #292727;
+    border-color: #7F7F7F;
+    color: #C5BABA;
+}
+
+#yourScore {
+    display: none;
+    font-weight: 600;
+    color: #291919;
+    font-size: 28px;
+}

@@ -1,0 +1,56 @@
+<!--Created by Sirius MK (Masis Karaetyan) on 18.06.2017.-->
+<!--Finished on 23.06.2017.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/nx3r7d.gif" type="image/x-icon">
+</head>
+<body>
+<div id="mainWindow">
+    <div id="panel">
+        <div></div>
+        <p>Snake v1.0.0</p>
+        <p>Created by Sirius MK</p>
+        <div id="pause" class="button">Pause</div>
+        <div id="retry" class="button" onclick="retry()">Retry</div>
+        <div id="changeSpeed">
+            <span class="headerText">Change Speed</span><br>
+            <div id="minus" class="button" onclick="changeSpeed(0)">-</div>
+            <div id="currentSpeed" class="writeText">3</div>
+            <div id="plus" class="button" onclick="changeSpeed(1)">+</div>
+        </div>
+        <div id="score">
+            <span class="headerText">Score</span><br>
+            <div id="currentScore" class="writeText">0</div>
+            <span class="headerText">High Score</span>
+            <div id="highScore" class="writeText">0</div>
+        </div>
+        <div><span class="headerText">Use the arrow keys to control the snake</span><br>
+            <div class="button" id="upKey">&uarr;</div>
+            <div class="button" id="leftKey">&larr;</div>
+            <div class="button" id="downKey">&darr;</div>
+            <div class="button" id="rightKey">&rarr;</div>
+        </div>
+
+    </div>
+    <!--end of panel-->
+
+    <div id="gameZone">
+        <div id="pause_win_gameover">
+            <div id="paused"></div>
+            <div id="yourScore"></div>
+            <div id="continue"></div>
+        </div>
+        <div class="button" id="play">PLAY</div>
+        <div id="Countdown">3</div>
+    </div>
+</div>
+<!--end of gameZone-->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
